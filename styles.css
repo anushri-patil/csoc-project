@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /* background-image: url('space.jpg');
+    background-size: cover;
+    /* Adjust how the background image is sized */
+    /* background-repeat: no-repeat; */
+    /* Prevent the background image from repeating */
+    /* // background-attachment: fixed;
+    //background-size: contain; */
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.navbar {
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    /* Darker navbar background */
+    padding: 0.4rem 0.6rem;
+}
+
+.csItems>div {
+    margin-bottom: 10px;
+    /* Adjust the value as needed */
+}
+
+.csItems>div {
+    padding: 10px;
+}
+
+.navbar>h1 {
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Center-align the text */
+    width: 100%;
+    /* Make sure the heading takes up the full width */
+}
+
+.menu-icon {
+    background-color: #555;
+    color: #ecb7f4;
+    /* Change text color to a light blue */
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    /* Center-align the text */
+    line-height: 2rem;
+    /* Adjust the line height to vertically center the text */
+}
+
+.menu-icon:hover {
+    background-color: #777;
+    /* Darker color on hover */
+}
+
+.logo {
+    width: 100%;
+}
+
+.navbar img {
+    width: 100px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background-color: #fcf6ed;
+}
+
+.sidebar {
+    background-color: #382b75;
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+    height: 100vh;
+}
+
+@media screen and (max-width: 720px) {
+    /* Styles for screens up to 720px width */
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 85%;
+    }
+    .sidebar {
+        height: auto;
+        /* Remove fixed height for responsiveness */
+        padding: 1rem;
+        /* Adjust padding for smaller screens */
+    }
+    /* Adjust the font size and padding for sidebar items */
+    .sidebar>* {
+        font-size: 2.5vh;
+        /* Decrease font size */
+        padding: 0.5rem 1rem;
+        /* Adjust padding */
+    }
+}
+
+
+/* 
+@media screen and (max-width:720px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 85%;
+    }
+    .sidebar {
+        height: 80%;
+    }
+}
+
+.sidebar>* {
+    padding: 1rem;
+    color: #fff;
+    font-weight: 800;
+    font-size: 3.5vh;
+}
+ */
+
+
+/*
+.sidebar>*:hover {
+    background-color: #949494;
+    color: #fff;
+    cursor: pointer;
+}*/
+
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 8% 92%;
+    position: relative;
+    overflow: auto;
+    height: 100vh;
+}
+
+.spacecrafts,
+.launchers {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.spacecrafts>*,
+.launchers>* {
+    border: 1px solid #bcbcbc;
+    padding: 1rem;
+}
+
+.even {
+    background-color: #3498db;
+    ;
+}
+
+.odd {
+    background-color: #66b3ff;
+}
+
+.main>* {
+    position: absolute;
+}
+
+.display {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.customer_satellites,
+.centers {
+    flex-direction: column;
+    padding: 1rem;
+    padding-right: 10px
+}
+
+.filter,
+.filter2 {
+    display: flex;
+    padding: 0.2rem 0;
+}
+
+.filter>*,
+.filter2>* {
+    padding: 0.4rem 0.6rem;
+}
+
+.clicked {
+    background-color: #949494;
+}
+
+.sidebar>*:hover {
+    /* Change background color on hover */
+    color: #fff;
+    /* White text color on hover */
+    cursor: pointer;
+}
+
+.did-you-know {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.did-you-know p {
+    font-size: 18px;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 720px) {
+    /* Styles for screens up to 720px width */
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 85%;
+    }
+    .sidebar {
+        height: 80%;
+    }
+}
